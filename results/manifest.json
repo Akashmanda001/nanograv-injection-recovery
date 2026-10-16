@@ -1,0 +1,165 @@
+{
+  "n_psr": 12,
+  "nfreq": 30,
+  "snr_threshold": 3.0,
+  "base_seed": 20261014,
+  "noise_levels": {
+    "weak": [
+      -17.5,
+      -16.0
+    ],
+    "fiducial": [
+      -17.0,
+      -15.0
+    ],
+    "loud": [
+      -16.0,
+      -14.0
+    ]
+  },
+  "gwb_amps": [
+    -15.0,
+    -14.6,
+    -14.3
+  ],
+  "fitted_model_settings": {
+    "nstarts": 2,
+    "maxiter": 150,
+    "note": "Stage-1 used nstarts=4/maxiter=300"
+  },
+  "joint_model_settings": {
+    "maxiter": 150
+  },
+  "selection": "Project-1-style RMS-reduction groups from oracle FULL-model whitening (white + intrinsic red + common auto-term when a common process exists), mirroring Project 1's raw-vs-published-whitened grouping. Strong>50%, Moderate 10-50%, Weak<10%; <3 pulsars -> NaN",
+  "notes": [
+    "v1 residual-level injection (no timing-model fit).",
+    "fitted noise models reuse full-array per-pulsar fits on selection subsets (documented simplification)."
+  ],
+  "cells": [
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -15.0,
+      "noise": "weak",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -15.0,
+      "noise": "fiducial",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -15.0,
+      "noise": "loud",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -14.6,
+      "noise": "weak",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -14.6,
+      "noise": "fiducial",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -14.6,
+      "noise": "loud",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -14.3,
+      "noise": "weak",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -14.3,
+      "noise": "fiducial",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -14.3,
+      "noise": "loud",
+      "n_realizations": 30
+    },
+    {
+      "scenario": "null",
+      "log10_A_gwb": NaN,
+      "noise": "weak",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "null",
+      "log10_A_gwb": NaN,
+      "noise": "fiducial",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "null",
+      "log10_A_gwb": NaN,
+      "noise": "loud",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "loud_red",
+      "log10_A_gwb": NaN,
+      "noise": "fiducial",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "loud_red",
+      "log10_A_gwb": NaN,
+      "noise": "loud",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "monopole",
+      "log10_A_gwb": -14.6,
+      "noise": "fiducial",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "monopole",
+      "log10_A_gwb": -14.6,
+      "noise": "loud",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "dipole",
+      "log10_A_gwb": -14.6,
+      "noise": "fiducial",
+      "n_realizations": 35
+    },
+    {
+      "scenario": "dipole",
+      "log10_A_gwb": -14.6,
+      "noise": "loud",
+      "n_realizations": 35
+    }
+  ],
+  "joint_cells": [
+    {
+      "scenario": "gwb",
+      "log10_A_gwb": -14.6,
+      "noise": "fiducial",
+      "n_realizations": 10
+    },
+    {
+      "scenario": "null",
+      "log10_A_gwb": NaN,
+      "noise": "fiducial",
+      "n_realizations": 10
+    }
+  ],
+  "fitted_fallback_fraction": 0.0,
+  "n_realizations_total": 605,
+  "runtime_s": 1957.4372730255127
+}
